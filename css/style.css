@@ -1,0 +1,301 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #1C2C40;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+
+header{}
+
+header section.wrapper{
+	height: 70px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header section.wrapper div.left{
+	display: flex;
+	justify-content: start;
+}
+
+header section.wrapper div.left h1{
+	width: 100px;
+	margin-right: 16px;
+}
+
+header section.wrapper div.left h1 a{
+	width: 100%;
+	display: block;
+}
+
+header section.wrapper div.left h1 a img{
+	width: 100%;
+	display: block;
+}
+
+header section.wrapper div.left ul{
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+header section.wrapper div.left ul li{
+	margin-right: 24px;
+}
+
+header section.wrapper div.left ul li a{}
+
+header section.wrapper div.right{}
+
+header section.wrapper div.right ul{
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+header section.wrapper div.right ul li{
+	margin-right: 24px;
+}
+
+header section.wrapper div.right ul li a{}
+
+header section.wrapper div.right ul li:last-child {
+	margin-right: 0;
+	padding: 8px 16px;
+	background: #23D3D3;
+	border-radius: 24px;
+}
+header section.wrapper div.right ul li:last-child a{
+	color: #fff;
+}
+#home{
+	height: calc(100vh - 70px);
+	background: url(../images/bg.jpg) no-repeat 600px ;
+	background-size: contain;
+}
+
+#home section.wrapper{}
+
+#home section.wrapper h1{
+	padding-top: 120px;
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 16px;
+}
+
+#home section.wrapper p{
+	font-size: 18px;
+	margin-bottom: 32px;
+
+}
+
+#home section.wrapper a.button{
+	background-color: var(--main-bg-color);
+	padding: 16px 24px;
+	 border-radius: 24px;
+	 color: #fff;
+}
+
+#home section.wrapper p.two{
+	margin-top: 32px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+}
+
+#home section.wrapper p.two img{
+	margin-left: 16px;
+}
+
+#service{
+	padding: 120px 0;
+	background: url(../images/whatis-bg.jpg) no-repeat 700px 400px;
+	background-size: 65%;
+}
+
+#service section.wrapper{}
+
+#service section.wrapper div.top{
+	text-align: center;
+}
+
+#service section.wrapper div.top div{
+	margin-bottom: 24px;
+}
+
+#service section.wrapper div.top div img{
+	box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+	padding: 6px;
+	border-radius: 50%;
+}
+
+#service section.wrapper div.top p{
+	font-style: 18px;
+	margin-bottom: 32px;
+}
+
+#service section.wrapper div.top h1{
+	font-size: 56px;
+	font-weight: 700;
+	margin-bottom: 60px;
+}
+
+#service section.wrapper div.button{}
+
+#service section.wrapper div.buttom div.card{
+	margin-bottom: 48px;
+}
+
+#service section.wrapper div.buttom div.card h3{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 24px;
+	display: flex;
+	align-items: center;
+}
+
+#service section.wrapper div.buttom div.card h3 span{
+	margin-right: 8px;
+	padding: 4px 8px;
+	background-color: var(--main-bg-color);
+	color: #fff;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+#service section.wrapper div.buttom div.card p{
+	font-style: 18px;
+	margin-bottom: 32px;
+	width: 35%;
+}
+
+#service section.wrapper div.buttom div.card a{
+	padding: 8px 16px;
+	border: 2px solid var(--main-heading-color);
+	border-radius: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
